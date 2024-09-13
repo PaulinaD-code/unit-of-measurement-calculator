@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="kalkulator.css">
+
+  <title>Document</title>
+</head>
+
+
+<body>
+  <div class="main">
+    <div class="container-calculator">
+      <h4 class="title">Kalkulator jednostki miary - CENTYMETRY NA CALE</h4>
+      <p>INSTRUKCJA</p>
+      <p>Wpisz w poniższe pole wartość liczbową w centymetrach i naciśnij na guzik "SPRAWDŹ" w celu otrzymania przeliczenia podanej jednostki miary na cale</p>
+      <div class="row">
+        <div class="col 8">
+          <input type="number" min="0" onkeydown="checkKeyEvent(event)">
+        </div>
+        <div class="col 2">
+          <button class="button1"><p>SPRAWDŹ</p></button>
+        </div>
+      </div>
+      <span class="answer"></span>
+    </div>
+    <div class="container-calculator">
+      <h4 class="title">Kalkulator jednostki miary - CALE NA CENTYMETRY</h4>
+      <p>INSTRUKCJA</p>
+      <p>Wpisz w poniższe pole wartość liczbową w calach i naciśnij na guzik "SPRAWDŹ" w celu otrzymania przeliczenia podanej jednostki miary na centymetry</p>
+      <div class="row">
+        <div class="col 8">
+          <input type="number" min="0" class="incount" onkeydown="checkKey2Event(event)">
+        </div>
+        <div class="col 2">
+          <button class="button2"><p>SPRAWDŹ</p></button>
+        </div>
+      </div>
+      <span class="answer2"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
